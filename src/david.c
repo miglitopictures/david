@@ -56,12 +56,15 @@ int main(int argc, char *argv[]) {
             // progress - shows progress
             else if (*argv[1] == 'p' || strcmp(argv[1], "progress") == 0) {
 
-                // find the size of the file and derive number of scenes
+                // get the size of the file with fseek and ftell
                 fseek(file_stream, 0, SEEK_END);
                 long size_of_file = ftell(file_stream);
+                // 'derive' scene count
                 int current_scene_count = size_of_file / sizeof(Scene);
-                
+                // show it
                 printf("%02d out of 70.\n", current_scene_count);
+            } else {
+                printf("'%s' is not a command.\n", argv[1]);
             }
         }
         else {

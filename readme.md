@@ -10,16 +10,16 @@ I first discovered this way of writing scripts from David Lynch. As far as I rem
 ```bash
 gcc -o david david.c
 ```
-then move `david` somewhere in your `$PATH`, like `~/.local/bin` or `/usr/local/bin`.
+Then move `david` somewhere in your `$PATH`, like `~/.local/bin` or `/usr/local/bin`.
 
 ## usage
-create your directory and go to it
+Create your directory and go to it.
 ```bash
 mkdir blue-velvet && cd blue-velvet
 ```
 david keeps your scenes in a `scenes.david` file inside the current directory, so one directory = one movie.
 
-start writing scenes with david
+Start writing scenes with david.
 ```bash
 david "Blue sky, red roses, a white picket fence."
 ```
@@ -27,7 +27,7 @@ david "Blue sky, red roses, a white picket fence."
 Written 1 item to './scenes.david'.
 ```
 
-read everything you wrote so far
+Read everything you wrote so far.
 ```bash
 david
 ```
@@ -36,10 +36,10 @@ david
  2 - A fire truck glides past in slow motion; a fireman waves.
 ```
 
-commands:
+Commands:
 
 `-r` `-regret`
-deletes last scene you wrote
+deletes the last scene you wrote.
 ```bash
 david -regret
 ```
@@ -54,12 +54,12 @@ david -progress
 ```
 
 ## limits
-- a scene holds up to 255 characters.
+- A scene holds up to 255 characters.
 - `david` lists up to 128 scenes.
 
 ## example
-In `examples/blue-velvet`, you will find 1986's masterpiece Blue Velvet broken into 70 scenes. This decomposition was made for fun and curiosity using Claude and should not be taken seriously.  Others like it can be found in `examples/`.
-  
+In `examples/blue-velvet`, you will find 1986's masterpiece Blue Velvet broken into 70 scenes. This decomposition was made for fun and curiosity using Claude and should not be taken seriously. Others like it can be found in `examples/`.
+
 Go into one of the example directories and run `david` to read it.
 
 ## disclaimer

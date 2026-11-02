@@ -49,7 +49,8 @@ int main(int argc, char *argv[]) {
 
     int num_written = fwrite(scenes, sizeof(Scene), scene_count, file_stream);
     printf("Written %d items to '%s'.\n", num_written, path);
-
+    
+    printf("%s\n", argv[2]);
 
     fclose(file_stream);
 

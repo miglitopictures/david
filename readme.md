@@ -1,4 +1,3 @@
-# david
 A script writing program for the terminal.
 
 ## philosophy
